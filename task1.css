@@ -1,0 +1,38 @@
+p{
+    background-color:green;
+    color:whitesmoke;
+    text-align:center;
+    font-size:30px;
+    font-family:sans-serif;
+    text-decoration:underline;
+    border:6px ridge orangered;
+}
+div{
+    background-color:palegreen;
+    width:1000px;
+    height:500px;
+}
+h1{
+   color:blue;
+   background:aquamarine;
+}
+h2{
+    color:brown;
+    background-color: peru;
+}
+h3{
+    color:purple;
+    background-color:cadetblue;
+}
+h4{
+    color:green;
+    background-color:olivedrab;
+}
+h5{
+    color:black;
+    background-color:goldenrod;
+}
+h6{
+    color:orangered;
+    background-color:greenyellow;
+}
