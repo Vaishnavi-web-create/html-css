@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 4rows3columns</title>
+    <style>
+        body{
+            display:grid;
+            border:5px ridge darkgreen;
+            grid-template-areas:
+            'header header header'
+            'nav article article'
+            'ads article article'
+            'footer footer footer';
+            grid-template-rows:60px 1fr 60px 40px;
+            grid-template-columns:100px 1fr 50px;
+            height:100vh;
+            gap:2px;
+
+        }
+        #pageheader{
+            grid-area:header;
+        }
+        #maincontent{
+            grid-area:article;
+        }
+        #navbar{
+            grid-area:nav;
+        }
+        #siteads{
+            grid-area:ads;
+        }
+        #pagefooter{
+            grid-area:footer;
+        }
+        header,footer,nav,article,div{
+            color:magenta;
+            text-shadow:2px 2px 2px skyblue;
+            background-color:greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="pageheader">Header of the page</header>
+    <article id="maincontent">Main article of the page</article>
+    <nav id="navbar">Navigation</nav>
+    <div id="siteads">Advertisement</div>
+    <footer id="pagefooter">Footer of the page</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 3rows3columns</title>
+    <style>
+        body{
+            display:grid;
+            border:4px double magenta;
+            grid-template-areas:
+            'nav header header'
+            'nav article article'
+            'nav footer footer';
+            grid-template-rows:70px 1fr 70px;
+            grid-template-columns:100px 1fr 70px;
+            height:100vh;
+            gap:2px;
+        }
+        #pageheader{
+            grid-area:header;
+        }
+        #maincontent{
+            grid-area:article;
+        }
+        #navbar{
+            grid-area:nav;
+        }
+        #pagefooter{
+            grid-area:footer;
+        }
+        header,footer,nav,article{
+            color:purple;
+            text-shadow:2px 2px 2px royalblue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <header id="pageheader">Header of the page</header>
+    <article id="maincontent">Main article of the page</article>
+    <nav id="navbar">Navigation</nav>
+    <footer id="pagefooter">Footer of the page</footer>
+</body>
+</html>
