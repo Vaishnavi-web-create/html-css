@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charitee</title>
+    <style>
+        body{
+            display:grid;
+            background-image:url("Flower_25.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+
+            grid-template-areas:
+            'header header header'
+            'article article article'
+            'footer footer footer';
+            grid-template-rows:100px 1fr 70px;
+            grid-template-columns:100px 1fr 70px;
+            height:100vh; 
+            gap:2px;
+        }
+       #header{
+            grid-area:header; 
+       }
+       ul{
+        list-style-type:none;
+       }
+       #links li{
+            float:left;
+            padding:10px;
+       }
+       #links a{
+            text-decoration:none;
+            color:purple;
+            text-shadow:2px 2px 2px royalblue;
+       }
+       #links a:hover{
+            color:blue;
+       }
+
+       #maincontent{
+            grid-area:article;
+       }
+       #maincontent h2{
+           color:red;
+       }
+       #pagefooter{
+             grid-area:footer;
+       }
+       #pagefooter h3{
+        color:darkblue;
+       }
+       #pageright{
+        float:right;
+        color:purple;
+        text-shadow:2px 2px 2px royalblue;
+        list-style-type:none;
+       }
+       #pageright a{
+        text-decoration:none;
+       }
+       #donate{
+        margin-top:10px;
+        padding:5px;
+       }
+       #content{
+        margin-top:150px;
+        text-align:left;
+       }
+       #logo{
+        /* float:left; */
+        padding-left:30px;
+       }
+       #button{
+        margin-top:40px;
+       }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+        <h1>Charitee</h1>
+        <nav id="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#whoweare">Who We Are?</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="pageright">
+            <li><a href="#callus">Call Us:(209)555-0816</a></li>
+            <button id="donate">Make a Donation</button>
+        </div>
+    </header>
+
+    <article id="maincontent">
+        <div id="content">
+        <b><h2>Give a helping hand to those who need it!</h2></b>
+        <p><small>When a child gets access to good food,it can change just about everything.</small></p>
+        </div>
+        <div id="button">
+            <button>Ongoing Programs</button>
+        </div>
+    </article>
+
+    <footer id="pagefooter">
+        <h3><b>Warm clothes for the winter program</h3></p>
+        <p><small>Every winter our volunteer sort,mend and deliver
+            donated coats,jumpers and blankets to families afford them.
+            Drop off clean, warm clothes at our office until the end of November.
+        </small></p>
+    </footer>
+
+</body>
+</html>
+
