@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        #header{
+            height:50px;
+            background-color:lightpink;
+            border:4px ridge magenta;
+        }
+        h3{
+            text-align:center;
+            text-decoration:underline;
+            color:darkblue;
+            text-shadow:3px 3px 3px seagreen;
+        }
+        #form{
+            margin-top:2px;
+            padding:100px;
+            border:4px ridge darkblue;
+            height:600px;
+            background-color:lightskyblue;
+            text-align: center;
+        }
+        label{
+            font-family:sans-serif;
+            font-size:15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+       <h3>Contact Form</h3>
+    </div>
+    <div id="form">
+       <label for="fname">Firstname</label>
+       <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+       <br><br>
+
+       <label for="lname">Lastname</label>
+       <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+       <br><br>
+
+       <label for="em">E-mail</label>
+       <input type="email" id="em" name="em" placeholder="Enter your email address" required>
+       <br><br>
+
+       <label for="contact">Contact Number</label>
+       <input type="number" id="contact" name="contact" placeholder="Enter your contact number" required>
+       <br><br>
+        
+       <label>Contact Preference</label>
+
+        <input type="checkbox" id="email" name="cnctpref" value="email">
+        <label for="email">Reply to my email address</label>
+
+        <input type="checkbox" id="phone" name="cnctpref" value="number">
+        <label for="phone">Reply by phone</label>
+        <br><br>
+
+        <label for="msg">Message</label>
+        <input type="text" id="msg" name="msg" placeholder="Type your message here" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <br><br>
+    </div>
+</body>
+</html>
