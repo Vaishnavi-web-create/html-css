@@ -1,0 +1,139 @@
+body{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.pageheader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:rgba(168, 1, 93, 0.925);
+}
+.pageheader h3{
+    color:whitesmoke;
+    font-family:Arial;
+    padding-left:58px;
+}
+.pageheader h3:hover{
+    font-size:24px;
+}
+.navbar{
+    display:flex;
+    justify-content:flex-end;
+    padding-right:100px;
+}
+.navbar a{
+    color:whitesmoke;
+    padding:10px;
+    text-decoration:none;
+    font-family:Arial;
+}
+.navbar a:hover{
+    color:gold;
+    text-decoration:underline;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:lightpink;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+.content h1{
+    font-family:Arial;
+
+}
+.content p{
+    font-family:Arial;
+    
+}
+.explore-btn{
+    background-color:purple;
+    color:whitesmoke;
+    padding:8px 12px;
+    border:none;
+    border-radius:4px;
+
+}
+.explore-btn:hover{
+    background-color:magenta;
+}
+.content:hover{
+    background-color:palevioletred;
+
+}
+.articles{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+.articles h4{
+    font-family:Arial;
+    color:rgb(206, 7, 206);
+    font-weight:bold;
+    font-size:20px;
+}
+.articles:hover{
+    background-color:lavender;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+.card{
+    padding:10px 20px;
+    border:1px solid gray;
+    border-radius:4px;
+    box-shadow:2px 2px 4px gray;
+    transition:width,height 3s;
+}
+.card h4{
+    text-align:center;
+    color:darkmagenta;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:18px;
+}
+/* .card h4:hover{
+    font-size:22px;
+} */
+
+.card p{
+    text-align:center;
+    font-family:Arial;
+    font-size:16px;
+}
+.card:hover{
+    box-shadow:6px 6px 9px grey;
+    background-color:lavender;
+    width: 180px;
+    height:120px;
+}
+/* .card p:hover{
+    font-size:18px;
+} */
+.pagefooter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:purple;
+    color:whitesmoke;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.pagefooter:hover{
+    background-color:magenta;
+}
+.pagefooter p{
+    color:whitesmoke;
+    font-size:16px;
+}
