@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create variables for student name, roll number, percentage, and pass status. Print their values.
+
+        let student_name='Hema';
+        let roll_number=191;
+        let percentage=95;
+        let pass_status=true;
+        console.log(student_name,roll_number,percentage,pass_status);
+        document.write(student_name+'<br>');
+        document.write(roll_number+'<br>');
+        document.write(percentage+'<br>');
+        document.write(pass_status+'<br>');
+    
+        
+       // Find the datatype of five different variables using typeof.
+
+        console.log(typeof(student_name));
+        console.log(typeof(roll_number));
+        console.log(typeof(percentage));
+        console.log(typeof(pass_status));
+    
+      //Calculate the square of a number.
+
+       no=parseInt(prompt('Enter a number:'));
+       square_no=no*no;
+       alert('The square of the given number is' + ' ' + square_no);
+       console.log(square_no);
+       document.write(square_no+'<br>');
+
+       //Multiply two numbers.
+       a=parseInt(prompt('Enter a number'));
+       b=parseInt(prompt('Enter another number'));
+       c=a*b;
+       alert('Multiple of'+ ' '+ a + ' ' +'and' + ' '+ b + ' ' + 'is' + ' '+ c);
+       console.log(c);
+       document.write(c+'<br>');
+    
+      // Declare an array of five fruits and print it.
+      const fruits=['apple','orange','grapes','pineapple','jackfruit'];
+      console.log(fruits);
+      document.write(fruits+'<br>');
+
+     // Create an object containing student name, age, and course. Print each property.
+     const student={
+        student_name:'Vaishnavi',
+        age:22,
+        course:'Full Stack'
+     };
+     console.log(student.student_name);
+     console.log(student.age);
+     console.log(student.course);
+     
+     document.write(student.student_name+'<br>');
+     document.write(student.age+'<br>');
+     document.write(student.course+'<br>');
+       
+    </script>
+</body>
+</html>
