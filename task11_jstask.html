@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //1,Check whether a number is divisible by 3 and 5
+        let num=parseInt(prompt('Enter a number:'));
+        if(num%3==0 && num%5==0){
+            alert('The given number'+ ' '+ num + ' ' + 'is divisible by 3 and 5');
+        }
+        else{
+            alert('The given number'+ ' '+ num + ' ' + 'is not divisible by 3 and 5');
+        }
+
+
+     // 2,Check whether a student passed in either subject
+     // let maths=35
+     // let science=20
+      let maths=35;
+      let science=20;
+      if(maths>=35 || science>=35){
+        console.log('Student passed');
+      }
+      else{
+        console.log('Student failed');
+      }
+
+
+     // 3,Login validation:
+     // let username='admin'
+     // let password='12345'
+       let username='admin';
+       let password='12345'
+       if(username=='admin' && password=='12345'){
+        alert('Login successfully');
+       }
+       else{
+        alert('Invalid username or password');
+       }
+
+
+       // 4,Check whether a username is either "admin" or "manager".
+        let user_name=prompt('Enter username');
+        if(user_name=='admin' || user_name=='manager'){
+            alert('Valid username');
+        }
+        else{
+            alert('Invalid username');
+        }
+
+
+        // 5,Check whether a person is eligible for a senior citizen discount (age 60 or above).
+        let age=parseInt(prompt('Enter your age'));
+        if(age>=60){
+            alert('You are eligible for a senior citizen discount');
+        }
+        else{
+            alert('You are not eligible for a senior citizen discount');
+        }
+    </script>
+</body>
+</html>
