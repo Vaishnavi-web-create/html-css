@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>FUNCTIONS</h3>
+    <script>
+       //Write a function addNumbers(a, b) that accepts two numbers and returns their sum.
+          function addNumbers(a,b)
+          {
+            let sum=a+b;
+            console.log('The sum of two numbers are'+' '+sum);
+          }
+          addNumbers(10,20);
+          addNumbers(9,10);
+       // Write a function checkEvenOdd(num) that checks whether a given number is even or odd.
+          function checkEvenOdd(num){
+            if(num%2==0){
+                console.log('The given number is even number');
+            }
+            else{
+                console.log('The given number is odd number');
+            }
+          }
+          checkEvenOdd(9);
+          checkEvenOdd(10);
+
+
+       // Write a function findLargest(a, b, c) that accepts three numbers and returns the largest number.
+          function findLargest(a,b,c){
+            if(a>=b && a>=c){
+                console.log('a is largest number');
+            }
+            else if(b>=a && b>=c){
+                console.log('b is largest number');
+            }
+            else{
+                console.log('c is largest number');
+            }
+          }
+          findLargest(12,15,10);
+          findLargest(55,43,28);
+          findLargest(10,30,60);
+
+
+       // Write a function factorial(num) that calculates the factorial of a given number.
+          function factorial(num){
+            let fact=1;
+            if(num<0){
+                return 'Factorial is not possible for negative numbers';
+            }
+            else{
+                for(let i=1;i<=num;i++){
+                    fact=fact*i;
+                }
+                return fact;
+            }
+          }
+          let result=factorial(5);
+          console.log('Factorial is'+' '+result);
+
+          console.log('Factorial is'+' '+ factorial(4));
+          console.log('Factorial is'+' '+factorial(6));
+          console.log(factorial(-4));
+
+
+       // Write a function that reverses a given string.
+         function reverseString(str){
+            let rev="";
+            for(let i=str.length-1;i>=0;i--){
+                rev=rev+str[i];
+            }
+            return rev;
+         }
+         let result1=reverseString('Javascript');
+         console.log('The reversed string is'+' '+result1);
+         console.log(reverseString('Welcome'));
+         console.log(reverseString('12345'));
+
+       // Write a function countVowels(str) that counts the number of vowels in a given string.
+       function countVowels(str){
+        let count=0;
+        for(let i=0;i<str.length;i++){
+          if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u'){
+            count++;
+          }
+        }
+        return count;
+       }
+       let result2=countVowels('education');
+       console.log('Count of vowels:'+' '+result2);
+       console.log(countVowels('javascript'));
+
+
+    </script>
+</body>
+</html>
