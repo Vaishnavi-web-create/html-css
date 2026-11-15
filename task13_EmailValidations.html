@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>EMAIL VALIDATION</h3>
+    <form name="myForm" action="abc.php" 
+    onsubmit="return validateForm()" method="post">
+     <label>Email</label>
+     <input type="text" name="email" placeholder="Enter your email">
+     <br><br>
+     <input type="submit" value="Register">
+    </form>
+    <script>
+        function validateForm(){
+            let email=document.myForm.email.value;
+
+            let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(email==''){
+                alert('Email should not be empty');
+                document.myForm.email.focus();
+                return false;
+            }
+            if(pattern.test(email)){
+                console.log('Valid email');
+            }
+            else{
+                alert('Please enter valid email');
+                document.myForm.email.focus();
+                console.log('Invalid email');
+                return false;
+            }
+            return true;
+            
+           
+        }
+    </script>
+</body>
+</html>
