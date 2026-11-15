@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>PROGRAMS</h3>
+    <script>
+      //palindrome
+      function checkPalindrome(str){
+        let rev="";
+        for(let i=str.length-1;i>=0;i--){
+            rev=rev+str[i];
+        }
+       
+        if(str===rev){
+            console.log(str + ' ' + 'is palindrome');
+        }
+        else{
+            console.log(str + ' ' + 'is not a palindrome');
+        }
+      }
+      checkPalindrome('madam');
+      checkPalindrome('121');
+      checkPalindrome('hello');
+
+      // anagram
+      function checkAnagram(str1,str2){
+        let word1=str1.toLowerCase();
+        let word2=str2.toLowerCase();
+
+        let result1=word1.split('').sort().join('');
+        let result2=word2.split('').sort().join('');
+
+        if(result1==result2){
+            console.log('It is Anagram');
+        }
+        else{
+            console.log('It is not an Anagram');
+        }
+      }
+      checkAnagram('listen','silent');
+      checkAnagram('heart','earth');
+      checkAnagram('hello','world');
+
+      // reverse a strings
+      function reverseString(str){
+        let reverse="";
+        for(let i=str.length-1;i>=0;i--){
+            reverse=reverse+str[i];
+        }
+        return reverse;
+      }
+      let result=reverseString('programming');
+      console.log('Reversed String:'+ result);
+      console.log(reverseString('hello'));
+      
+      // prime numbers
+      function checkPrimeno(num){
+        let count=0;
+        if(num<=1){
+            console.log('Not a prime number');
+        }
+        else{
+           for(let i=1;i<=num;i++){
+            if(num%i==0){
+                count++;
+            }
+           }
+        
+          if(count==2){
+                console.log('The number is prime number');
+          }
+          else{
+            console.log('The number is not a prime number');
+          }
+        } 
+      }
+      checkPrimeno(7);
+      checkPrimeno(9);
+      checkPrimeno(3);
+      checkPrimeno(1);
+
+      // swapping of two nos without using third variable
+      function swapping(a,b){
+        console.log('Before Swapping:');
+        console.log('a=' + a);
+        console.log('b=' + b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        console.log('After Swapping:');
+        console.log('a='+a);
+        console.log('b='+b);
+      }
+      swapping(20,30);
+
+      // iterate a array using for loop.--break, continue
+      // break-1 to 100stop
+      // continue-1 to 10
+      // 5 -pause or skip
+      // 12346789
+    //   for(let i=1;i<=100;i++){
+    //     if(i==50){
+    //      break;
+    //     }
+    //     console.log(i);
+    //   }
+    //   for(let i=1;i<=10;i++){
+    //     if(i==5){
+    //         continue;
+    //     }
+    //     console.log(i);
+    //   }
+     
+    const arr=[10,20,30,40,50,60];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]==40){
+            break;
+        }
+        console.log(arr[i]);
+    }
+
+    const a=[45,34,57,64,76,90,98];
+    for(let i=0;i<a.length;i++){
+        if(a[i]==64){
+            continue;
+        }
+        console.log(a[i]);
+    }
+    
+
+      // array=[1,2,3,[4,5,6],[7,8,9]]-flattern the array.
+      // result:[1,2,3,4,5,6,7,8,9]
+      // access the 2nd array and 3rd array index positions.
+
+      const ar=[1,2,3,[4,5,6],[7,8,9]];
+      let result1=[];
+      for(let i=0;i<ar.length;i++){
+        if(Array.isArray(ar[i])){
+            for(let j=0;j<ar[i].length;j++){
+                result1.push(ar[i][j]);
+            }
+        }
+        else{
+            result1.push(ar[i]);
+        }
+        console.log(result1);
+      }
+
+
+    </script>
+</body>
